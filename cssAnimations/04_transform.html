@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transform</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1.5rem;
+			font-weight: 700;
+			background-color: #333;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.box{
+			position: relative;
+			background-color: white;
+			width: 10rem;
+			height:10rem;
+			transition: all 2s ease-in-out;
+		}
+
+		.box:hover{
+			transform: rotate(180deg);
+			/* transform: skew(-10deg); */
+			/* transform: scale(2); */
+			/* transform: translateY(10rem);
+			transform: translatex(10rem);
+			transform: translate(10rem, 10rem); */
+			/* transform: translate3d(10rem, 10rem, 10rem); */
+		
+		}
+
+		.side{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.a{ 
+			background: tomato;
+			width: 6rem;
+			height: 6rem;
+			top: 3rem;
+			left: 1rem;
+		}
+		.b{ 
+			background: rgb(91, 165, 230);
+			height: 6rem;
+			width: 2rem;
+			top: 1.8rem;
+			left: 7rem;
+			transform: skew(0deg, -50deg);
+		}
+		.c{ 
+			width: 6rem;
+			height: 2.5rem;
+			background: rgb(126, 245, 136);
+			transform: skew(-40deg);
+			left: 2.05rem;
+			top: 0.5rem;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="a side">A</div>
+		<div class="b side">B</div>
+		<div class="c side">C</div>
+	</div>
+</body>
+</html>
