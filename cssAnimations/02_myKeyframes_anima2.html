@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Keyframes | Anima2</title>
+	<style>
+		body{
+			background: #333;
+			color: #fff;
+		}
+
+		.box{
+			background-color: white;
+			width: 10rem;
+			height: 10rem;
+			position: relative;
+			top: 15rem;
+			left: 35rem;
+			opacity: 0.2;
+			animation: anima2 5s forwards 1s ease-in-out;
+		}
+
+		@keyframes anima2{
+			25%{
+				top: 15rem;
+				left: 45rem;
+				background: rgb(69, 16, 16);
+				opacity: 0.7;
+			}
+			50%{
+				top: 25rem;
+				left: 45rem;
+				background: rgb(227, 46, 46);
+				opacity: 0.8;
+			}
+			75% {
+				top: 25rem;
+				left: 35rem;
+				background: rgb(157, 12, 12);
+				opacity: 0.9;
+			}
+			100%{
+				top: 15rem;
+				left: 35rem;
+				border-radius: 50%;
+				background: tomato;
+				opacity: 1;
+			} 
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
